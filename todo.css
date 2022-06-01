@@ -1,0 +1,92 @@
+@media (max-width: 750px) {
+  .container {
+    align-items: flex-start !important;
+  }
+  .content {
+    width: 90% !important;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 65%;
+  height: auto;
+}
+.container .content .upper_section {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+.container .content .upper_section h3 {
+  padding: 5px 0;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.container .content .upper_section .input_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.container .content .upper_section .input_section input {
+  width: 70%;
+  height: 39px;
+}
+.container .content .upper_section .input_section button {
+  width: 20%;
+  height: 43px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.container .content .list {
+  width: 100%;
+}
+.container .content .list ul {
+}
+.container .content .list ul li {
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  padding: 0 5%;
+  width: 90%;
+}
+.container .content .list ul li:nth-last-of-type(even) {
+  background-color: #f9f9f9;
+}
+.container .content .list ul li:hover {
+  background-color: #c5bfbf;
+}
+.close {
+  position: absolute;
+  right: 5%;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+span:hover {
+  cursor: pointer;
+  color: red;
+}
